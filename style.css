@@ -12,7 +12,7 @@
 /* Main pannels */
 #content {
     max-width: 800px;
-    width: fit-content;
+    width: max-content;
     margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -63,4 +63,11 @@
 
 .hover:hover {
     opacity: 0.7;
+}
+
+/* For small screens */
+@media only screen and (max-width: 800px) {
+    #content {
+        max-width: 100vw;
+    }
 }
