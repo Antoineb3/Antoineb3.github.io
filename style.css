@@ -1,0 +1,73 @@
+/* General */
+.col {
+    text-align: center;
+}
+
+.ui-loader {
+    display: none !important;
+}
+
+/* Main pannels */
+#content {
+    max-width: 800px;
+    width: fit-content;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#game_conolls {
+    border: solid 1px black;
+    background-color: #4c742c;
+}
+
+#game_panel {
+    border: solid 1px black;
+    padding: 0px;
+}
+
+/* game controll pannel */
+#game_conolls img {
+    width: 2em;
+}
+
+
+#game_conolls .ui-select {
+    min-width: 170px;
+}
+
+#timer, #bomb_count{
+    font-size: 1.8em;
+    color: white;
+}
+
+/* game results pannel */
+#game_results{
+    background-color: #4c742c;
+    text-align: center;
+    font-size: 2em;
+    color: white;
+}
+
+/* Game pannel */
+html, body, .row {
+    height: 100%;
+    min-height: 100%;
+}
+
+.game_cell{
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.flag{
+    background: url("img/red-flag.svg") no-repeat center center;
+}
+
+.mine{
+    background: url("img/mine.svg") no-repeat center center;
+}
+
+.hover:hover {
+    opacity: 0.7;
+}
