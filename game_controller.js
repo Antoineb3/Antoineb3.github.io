@@ -31,6 +31,8 @@ $(function () {
     let time = 0;
 
     // Execute when page loads
+    $.event.special.tap.tapholdThreshold = 1000;
+    $.event.special.tap.emitTapOnTaphold = false;
     prepare_top_pannel();
     load_game();
 
@@ -44,7 +46,7 @@ $(function () {
             $('#difficulties').append(`<option value="${dif}">${dif}</option>`);
         }
         // Display selected difficulty in dropdown
-        $('#dificulty_col .ui-btn-text').text(dificulty);
+        $('#difficulties-button span').text(dificulty);
 
         // Callbacks
         $('#difficulties').bind('change', change_dificulty);

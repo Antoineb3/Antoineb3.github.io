@@ -1,5 +1,7 @@
 /* General */
-.col {
+.col,
+.col-12,
+.col-4 {
     text-align: center;
 }
 
@@ -31,18 +33,14 @@
     width: 2em;
 }
 
-
-#game_conolls .ui-select {
-    min-width: 170px;
-}
-
-#timer, #bomb_count{
+#timer,
+#bomb_count {
     font-size: 1.8em;
     color: white;
 }
 
 /* game results pannel */
-#game_results{
+#game_results {
     background-color: #4c742c;
     text-align: center;
     font-size: 2em;
@@ -50,21 +48,16 @@
 }
 
 /* Game pannel */
-html, body, .row {
-    height: 100%;
-    min-height: 100%;
-}
-
-.game_cell{
+.game_cell {
     max-width: 50px;
     max-height: 50px;
 }
 
-.flag{
+.flag {
     background: url("img/red-flag.svg") no-repeat center center;
 }
 
-.mine{
+.mine {
     background: url("img/mine.svg") no-repeat center center;
 }
 
